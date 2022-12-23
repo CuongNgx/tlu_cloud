@@ -58,11 +58,11 @@ app.post("/", uploadMl.single("file"), async (req, res) => {
       success: true,
       response: {
         message: {
-          demo: path.join(__dirname, "static", url[1].path.substring(1)),
-          index: path.join(__dirname, "static", url[3].path.substring(1)),
-          practice: path.join(__dirname, "static", url[13].path.substring(1)),
-          test: path.join(__dirname, "static", url[30].path.substring(1)),
-          tutorial: path.join(__dirname, "static", url[31].path.substring(1)),
+          demo: path.join("https://tlu-cloud-cuongngx.vercel.app/", "static", url[1].path.substring(1)),
+          index: path.join("https://tlu-cloud-cuongngx.vercel.app/", "static", url[3].path.substring(1)),
+          practice: path.join("https://tlu-cloud-cuongngx.vercel.app/", "static", url[13].path.substring(1)),
+          test: path.join("https://tlu-cloud-cuongngx.vercel.app/", "static", url[30].path.substring(1)),
+          tutorial: path.join("https://tlu-cloud-cuongngx.vercel.app/", "static", url[31].path.substring(1)),
         },
       },
     });
