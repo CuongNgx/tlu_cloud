@@ -77,6 +77,12 @@ app.post("/", uploadMl.single("file"), async (req, res) => {
   }
 });
 
+app.use("/", (req, res, next) => {
+	res.json({
+		message: "Welcome to TLU_C cloud",
+	});
+});
+
 app.listen(3002, (err) => {
   if (!err) {
     console.log("app listening on 3002");
