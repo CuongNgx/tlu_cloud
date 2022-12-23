@@ -47,7 +47,7 @@ const deleteFile = async (req) => {
 };
 
 const uploadMl = multer({ storage: storage });
-app.post("/", uploadMl.single("file"), async (req, res) => {
+app.post("/upload", uploadMl.single("file"), async (req, res) => {
   try {
     const url = await unzip(req);
     if (!url) {
